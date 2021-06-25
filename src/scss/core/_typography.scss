@@ -1,0 +1,23 @@
+@font-face {
+  font-family: 'Grandstander Italic';
+  src: url('../../../dist/fonts/Grandstander-Italic-VariableFont_wght.ttf')
+    format('truetype');
+}
+
+@font-face {
+  font-family: 'Grandstander Bold';
+  src: url('../../../dist/fonts/Grandstander-VariableFont_wght.ttf')
+    format('truetype');
+}
+
+// Font families
+$base-font-family: 'Grandstander Bold', Arial, sans-serif;
+$alt-font-family: 'Grandstander Italic', Arial, sans-serif;
+
+$font-size-base: 1.2rem; //20px
+$font-size-lg: 3rem; //48px
+$font-size-md: 2rem; //32px
+$font-size-sm: 0.875em; //14px
+
+$line-size-sm: 1.25em;
+$line-size-md: 2em;

@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1024px;
+}
+
+body {
+  color: $color-theme-03;
+  background-color: $color-theme-01;
+  font-family: $base-font-family;
+  overflow-x: hidden;
+}

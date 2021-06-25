@@ -1,0 +1,150 @@
+nav {
+  background-color: $color-theme-04;
+}
+
+.nav {
+  padding: 15px 10px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  .logo-nav {
+    font-size: $font-size-md;
+  }
+  .items-nav {
+    > ul {
+      display: flex;
+      > li {
+        margin-left: 20px;
+        > a {
+          text-transform: uppercase;
+          color: $color-theme-03;
+          font-size: $font-size-base;
+          transition: 0.7s;
+
+          &:hover {
+            border: 2px solid $color-theme-01;
+            border-radius: 8px;
+            padding: 10px;
+            background-color: $color-theme-03;
+            color: $color-theme-01;
+            transition: 0.7s;
+          }
+        }
+      }
+    }
+  }
+}
+
+.search-movie {
+  padding: 50px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  > h2 {
+    margin-bottom: 10px;
+    font-size: $font-size-lg;
+  }
+
+  .form-movie {
+    padding: 10px;
+    display: flex;
+    input[type='text'] {
+      padding: 15px;
+      width: 500px;
+      margin-top: 10px;
+      font-size: $font-size-base;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      border-radius: 5px;
+      padding: 8px 15px;
+      margin-top: 10px;
+      margin-left: 15px;
+      background: $color-theme-04;
+      font-size: $font-size-md;
+      border: none;
+      cursor: pointer;
+      color: $color-theme-03;
+      opacity: 0.7;
+      transition: 0.4s;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+#card-movie {
+  width: 800px;
+  height: 420px;
+  margin-top: 25px;
+  background-color: #242424;
+  border: 6px solid $color-theme-03;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+
+  #card-error {
+    display: none;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    p {
+      flex: 1;
+      font-size: $font-size-base;
+      padding: 15px;
+      letter-spacing: 1px;
+      line-height: $line-size-md;
+    }
+    > #card-img-error {
+      flex: 2;
+      width: 300px;
+      height: 350px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+  #card-img {
+    display: none;
+    width: 250px;
+    height: 380px;
+    flex: 1;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+  }
+
+  #card-text {
+    display: none;
+    border-radius: 0 10px 10px 0;
+    flex: 2;
+    p {
+      font-size: $font-size-sm;
+      margin: 0 0 15px 15px;
+      letter-spacing: 1px;
+
+      &#Title {
+        text-align: center;
+        font-size: $font-size-md;
+        text-transform: uppercase;
+      }
+
+      &#Plot {
+        line-height: $line-size-md;
+      }
+    }
+  }
+}

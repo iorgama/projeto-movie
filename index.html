@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmes</title>
+  <link rel="stylesheet" href="./dist/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <nav>
+    <div class="nav container">
+      <div class="logo-nav">
+        <p> <i class="fas fa-film"></i> MovieS </p>
+      </div>
+      <div class="items-nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Lista</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section id="search-movie">
+    <div class="search-movie container">
+      <h2>Buscar filmes</h2>
+      <form class="form-movie" action="#">
+        <input type="text" placeholder="Digite o título original do filme..." name="name-movie" id="name-movie">
+        <button id="search" type="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <div id="card-movie">
+        <div id="card-error">
+          <p>Ops, não conseguimos encontrar o filme que você digitou. </p>
+          <div id="card-img-error">
+            <img src="./dist/img/not-found.png" alt="Filme não foi encontrado.">
+          </div>
+        </div>
+        <div id="card-img"></div>
+        <div id="card-text"></div>
+      </div>
+    </div>
+  </section>
+  <script src="./dist/js/script.js"></script>
+</body>
+
+</html>
