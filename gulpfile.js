@@ -16,6 +16,10 @@ gulp.task('icons', function () {
     .pipe(gulp.dest('dist/webfonts/'));
 });
 
+gulp.task('fonts', function () {
+  return gulp.src('./src/fonts/*').pipe(gulp.dest('dist/fonts/'));
+});
+
 //Procura todos os arquivos .scss na pasta src/scss bem como nas suas subpastas
 function compilaSass() {
   return gulp
