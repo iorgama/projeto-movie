@@ -1,4 +1,4 @@
-const url = 'http://www.omdbapi.com/';
+const url = 'https://www.omdbapi.com/';
 const api_key = 'apikey=9755b1af';
 const request = new XMLHttpRequest();
 
